@@ -8,7 +8,8 @@ let toJsonFromProjectInfo (projectInfo:ProjectInfo):string=
     
 //プロジェクトを保存する
 let saveProjectInfo (folderPath:string)  (projectInfo:ProjectInfo):unit = 
-     use sw=new StreamWriter(folderPath+"/"+projectInfo.Name+".json" |> File.Create)
-     toJsonFromProjectInfo projectInfo |> sw.WriteLine
-     ()
+    Directory.CreateDirectory(folderPath+"/"+projectInfo.Name) |> ignore
+    use sw=new StreamWriter(folderPath+"/"+projectInfo.Name+"/"+"project.json" |> File.Create)
+    toJsonFromProjectInfo projectInfo |> sw.WriteLine
+    ()
 
