@@ -3,7 +3,7 @@
 open FADVLib.ProjectServices.ProjectInfo
 open FSharp.Data
 
-type  ProjectInfoJson=JsonProvider<"""{"Name":"sample"}""">
+type  ProjectInfoJson=JsonProvider<"""{"name":"sample"}""">
 
 //ProjectInfoをjson文字列に変換する
 let toJsonFromProjectInfo (projectInfo:ProjectInfo):string=
