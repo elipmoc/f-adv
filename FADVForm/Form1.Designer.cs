@@ -30,6 +30,12 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.プロジェクトToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.作成ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ヘルプToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.開くToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -51,6 +57,44 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.プロジェクトToolStripMenuItem,
+            this.ヘルプToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // プロジェクトToolStripMenuItem
+            // 
+            this.プロジェクトToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.作成ToolStripMenuItem,
+            this.開くToolStripMenuItem});
+            this.プロジェクトToolStripMenuItem.Name = "プロジェクトToolStripMenuItem";
+            this.プロジェクトToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.プロジェクトToolStripMenuItem.Text = "プロジェクト";
+            // 
+            // 作成ToolStripMenuItem
+            // 
+            this.作成ToolStripMenuItem.Name = "作成ToolStripMenuItem";
+            this.作成ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.作成ToolStripMenuItem.Text = "作成";
+            // 
+            // ヘルプToolStripMenuItem
+            // 
+            this.ヘルプToolStripMenuItem.Name = "ヘルプToolStripMenuItem";
+            this.ヘルプToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.ヘルプToolStripMenuItem.Text = "ヘルプ";
+            // 
+            // 開くToolStripMenuItem
+            // 
+            this.開くToolStripMenuItem.Name = "開くToolStripMenuItem";
+            this.開くToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.開くToolStripMenuItem.Text = "開く";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -58,8 +102,12 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -69,6 +117,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem プロジェクトToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 作成ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 開くToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ヘルプToolStripMenuItem;
     }
 }
 
