@@ -44,6 +44,7 @@
             this.createButton.TabIndex = 0;
             this.createButton.Text = "作成";
             this.createButton.UseVisualStyleBackColor = true;
+            this.createButton.Click += new System.EventHandler(this.createButton_Click);
             // 
             // label1
             // 
@@ -85,6 +86,7 @@
             this.ReferenceFolderButton.TabIndex = 5;
             this.ReferenceFolderButton.Text = "参照";
             this.ReferenceFolderButton.UseVisualStyleBackColor = true;
+            this.ReferenceFolderButton.Click += new System.EventHandler(this.ReferenceFolderButton_Click);
             // 
             // ProjectCreateForm
             // 

@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using FADVLib.ProjectServices;
 
 namespace FADVForm
 {
@@ -15,6 +9,23 @@ namespace FADVForm
         public ProjectCreateForm()
         {
             InitializeComponent();
+        }
+
+        private void ReferenceFolderButton_Click(object sender, EventArgs e)
+        {
+            using (var folderDialog = new FolderBrowserDialog())
+            {
+                folderDialog.ShowDialog(this);
+                projectPathTextBox.Text = folderDialog.SelectedPath;
+            }
+        }
+
+        private void createButton_Click(object sender, EventArgs e)
+        {
+            ProjectInfoRepository.saveProjectInfo(
+                projectPathTextBox.Text,
+                new ProjectInfo.ProjectInfo(projectNameTextBox.Text)
+            );
         }
     }
 }
