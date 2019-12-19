@@ -15,5 +15,11 @@ namespace FADVForm
         {
             MessageBox.Show(testRoslyn.build("hoge.exe","hoge"));
         }
+
+        private void projectCreateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var form = new ProjectCreateForm())
+                form.ShowDialog(this);
+        }
     }
 }
