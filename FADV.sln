@@ -7,6 +7,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FADVLib", "FADVLib\FADVLib.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FADVForm", "FADVForm\FADVForm.csproj", "{882375B7-B7AA-4BF4-B518-FA8C1F1818B1}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FADVLibTest", "FADVLibTest\FADVLibTest.fsproj", "{B9F19290-FE1D-4CB6-AABA-486F942645A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{882375B7-B7AA-4BF4-B518-FA8C1F1818B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{882375B7-B7AA-4BF4-B518-FA8C1F1818B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{882375B7-B7AA-4BF4-B518-FA8C1F1818B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9F19290-FE1D-4CB6-AABA-486F942645A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9F19290-FE1D-4CB6-AABA-486F942645A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9F19290-FE1D-4CB6-AABA-486F942645A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9F19290-FE1D-4CB6-AABA-486F942645A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
